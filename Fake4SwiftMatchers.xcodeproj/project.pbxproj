@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F74CCB4A1E36C611008DF291 /* InvocationRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74CCB491E36C611008DF291 /* InvocationRecording.swift */; };
+		F74CCB4C1E36C622008DF291 /* HaveReceived.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74CCB4B1E36C622008DF291 /* HaveReceived.swift */; };
+		F74CCB541E36C7E1008DF291 /* FakeFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74CCB521E36C7DA008DF291 /* FakeFixture.swift */; };
+		F74CCB551E36C7E5008DF291 /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74CCB4F1E36C781008DF291 /* Fixture.swift */; };
+		F74CCB5E1E36DFC9008DF291 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F774D6631E36C4560069D1A3 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F774D6511E36C3670069D1A3 /* Fake4SwiftMatchers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F774D6471E36C3670069D1A3 /* Fake4SwiftMatchers.framework */; };
-		F774D6561E36C3670069D1A3 /* Fake4SwiftMatchersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774D6551E36C3670069D1A3 /* Fake4SwiftMatchersTests.swift */; };
+		F774D6561E36C3670069D1A3 /* HaveReceivedMatcherSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774D6551E36C3670069D1A3 /* HaveReceivedMatcherSpec.swift */; };
 		F774D6581E36C3670069D1A3 /* Fake4SwiftMatchers.h in Headers */ = {isa = PBXBuildFile; fileRef = F774D64A1E36C3670069D1A3 /* Fake4SwiftMatchers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F774D6641E36C4560069D1A3 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F774D6621E36C4560069D1A3 /* Nimble.framework */; };
+		F774D6671E36C46D0069D1A3 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F774D6631E36C4560069D1A3 /* Quick.framework */; };
+		F79FB8061E37D59700C8708D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F774D6621E36C4560069D1A3 /* Nimble.framework */; };
+		F79FB8071E37D59900C8708D /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F774D6621E36C4560069D1A3 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,13 +31,43 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F74CCB591E36DF40008DF291 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F74CCB5C1E36DFA8008DF291 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F74CCB5E1E36DFC9008DF291 /* Quick.framework in CopyFiles */,
+				F79FB8071E37D59900C8708D /* Nimble.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		F74CCB491E36C611008DF291 /* InvocationRecording.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvocationRecording.swift; sourceTree = "<group>"; };
+		F74CCB4B1E36C622008DF291 /* HaveReceived.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HaveReceived.swift; sourceTree = "<group>"; };
+		F74CCB4F1E36C781008DF291 /* Fixture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fixture.swift; path = Fixtures/Fixture.swift; sourceTree = "<group>"; };
+		F74CCB521E36C7DA008DF291 /* FakeFixture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeFixture.swift; sourceTree = "<group>"; };
+		F74CCB571E36C96C008DF291 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F774D6471E36C3670069D1A3 /* Fake4SwiftMatchers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fake4SwiftMatchers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F774D64A1E36C3670069D1A3 /* Fake4SwiftMatchers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fake4SwiftMatchers.h; sourceTree = "<group>"; };
 		F774D64B1E36C3670069D1A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F774D6501E36C3670069D1A3 /* Fake4SwiftMatchersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fake4SwiftMatchersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F774D6551E36C3670069D1A3 /* Fake4SwiftMatchersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fake4SwiftMatchersTests.swift; sourceTree = "<group>"; };
+		F774D6551E36C3670069D1A3 /* HaveReceivedMatcherSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaveReceivedMatcherSpec.swift; sourceTree = "<group>"; };
 		F774D6571E36C3670069D1A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F774D6621E36C4560069D1A3 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		F774D6631E36C4560069D1A3 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Build/iOS/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F774D6641E36C4560069D1A3 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +84,64 @@
 			buildActionMask = 2147483647;
 			files = (
 				F774D6511E36C3670069D1A3 /* Fake4SwiftMatchers.framework in Frameworks */,
+				F774D6671E36C46D0069D1A3 /* Quick.framework in Frameworks */,
+				F79FB8061E37D59700C8708D /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F74CCB471E36C5D8008DF291 /* Matchers */ = {
+			isa = PBXGroup;
+			children = (
+				F74CCB4B1E36C622008DF291 /* HaveReceived.swift */,
+			);
+			path = Matchers;
+			sourceTree = "<group>";
+		};
+		F74CCB481E36C5F5008DF291 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F74CCB491E36C611008DF291 /* InvocationRecording.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F74CCB4D1E36C755008DF291 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				F74CCB511E36C7CE008DF291 /* fakes */,
+				F74CCB4F1E36C781008DF291 /* Fixture.swift */,
+			);
+			name = Fixtures;
+			sourceTree = "<group>";
+		};
+		F74CCB511E36C7CE008DF291 /* fakes */ = {
+			isa = PBXGroup;
+			children = (
+				F74CCB521E36C7DA008DF291 /* FakeFixture.swift */,
+			);
+			name = fakes;
+			path = Fixtures/fakes;
+			sourceTree = "<group>";
+		};
+		F74CCB561E36C96B008DF291 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F74CCB571E36C96C008DF291 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F774D63D1E36C3670069D1A3 = {
 			isa = PBXGroup;
 			children = (
+				F774D6611E36C4430069D1A3 /* Carthage */,
 				F774D6491E36C3670069D1A3 /* Fake4SwiftMatchers */,
-				F774D6541E36C3670069D1A3 /* Fake4SwiftMatchersTests */,
+				F774D6541E36C3670069D1A3 /* Specs */,
 				F774D6481E36C3670069D1A3 /* Products */,
+				F74CCB561E36C96B008DF291 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,17 +159,29 @@
 			children = (
 				F774D64A1E36C3670069D1A3 /* Fake4SwiftMatchers.h */,
 				F774D64B1E36C3670069D1A3 /* Info.plist */,
+				F74CCB471E36C5D8008DF291 /* Matchers */,
+				F74CCB481E36C5F5008DF291 /* Models */,
 			);
 			path = Fake4SwiftMatchers;
 			sourceTree = "<group>";
 		};
-		F774D6541E36C3670069D1A3 /* Fake4SwiftMatchersTests */ = {
+		F774D6541E36C3670069D1A3 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
-				F774D6551E36C3670069D1A3 /* Fake4SwiftMatchersTests.swift */,
+				F74CCB4D1E36C755008DF291 /* Fixtures */,
+				F774D6551E36C3670069D1A3 /* HaveReceivedMatcherSpec.swift */,
 				F774D6571E36C3670069D1A3 /* Info.plist */,
 			);
-			path = Fake4SwiftMatchersTests;
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		F774D6611E36C4430069D1A3 /* Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				F774D6621E36C4560069D1A3 /* Nimble.framework */,
+				F774D6631E36C4560069D1A3 /* Quick.framework */,
+			);
+			path = Carthage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,7 +205,7 @@
 				F774D6421E36C3670069D1A3 /* Sources */,
 				F774D6431E36C3670069D1A3 /* Frameworks */,
 				F774D6441E36C3670069D1A3 /* Headers */,
-				F774D6451E36C3670069D1A3 /* Resources */,
+				F74CCB591E36DF40008DF291 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -124,7 +222,7 @@
 			buildPhases = (
 				F774D64C1E36C3670069D1A3 /* Sources */,
 				F774D64D1E36C3670069D1A3 /* Frameworks */,
-				F774D64E1E36C3670069D1A3 /* Resources */,
+				F74CCB5C1E36DFA8008DF291 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -148,6 +246,7 @@
 				TargetAttributes = {
 					F774D6461E36C3670069D1A3 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					F774D64F1E36C3670069D1A3 = {
@@ -174,28 +273,13 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		F774D6451E36C3670069D1A3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F774D64E1E36C3670069D1A3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		F774D6421E36C3670069D1A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F74CCB4C1E36C622008DF291 /* HaveReceived.swift in Sources */,
+				F74CCB4A1E36C611008DF291 /* InvocationRecording.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +287,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F774D6561E36C3670069D1A3 /* Fake4SwiftMatchersTests.swift in Sources */,
+				F74CCB541E36C7E1008DF291 /* FakeFixture.swift in Sources */,
+				F774D6561E36C3670069D1A3 /* HaveReceivedMatcherSpec.swift in Sources */,
+				F74CCB551E36C7E5008DF291 /* Fixture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,17 +406,24 @@
 		F774D65C1E36C3670069D1A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain//usr/lib/swift-migrator/sdks/iPhoneSimulator.sdk/Developer/Library/Frameworks/",
+				);
 				INFOPLIST_FILE = Fake4SwiftMatchers/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.general.linear.group.Fake4SwiftMatchers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,11 +431,17 @@
 		F774D65D1E36C3670069D1A3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain//usr/lib/swift-migrator/sdks/iPhoneSimulator.sdk/Developer/Library/Frameworks/",
+				);
 				INFOPLIST_FILE = Fake4SwiftMatchers/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -356,7 +455,12 @@
 		F774D65F1E36C3670069D1A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = Fake4SwiftMatchersTests/Info.plist;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Specs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.general.linear.group.Fake4SwiftMatchersTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -367,7 +471,12 @@
 		F774D6601E36C3670069D1A3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = Fake4SwiftMatchersTests/Info.plist;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Specs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.general.linear.group.Fake4SwiftMatchersTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -394,6 +503,7 @@
 				F774D65D1E36C3670069D1A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F774D65E1E36C3670069D1A3 /* Build configuration list for PBXNativeTarget "Fake4SwiftMatchersTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +512,7 @@
 				F774D6601E36C3670069D1A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
